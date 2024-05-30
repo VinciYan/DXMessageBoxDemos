@@ -1,0 +1,30 @@
+﻿<UserControl x:Class="DXMessageBoxDemos.View.MyUserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:DXMessageBoxDemos.View" xmlns:sys="clr-namespace:System;assembly=netstandard"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <StackPanel Margin="10">
+            <TextBlock Text="Enter your name:" Margin="0,0,0,10"/>
+            <TextBox x:Name="NameTextBox" Width="200" Margin="0,0,0,10"/>
+            <TextBlock Text="Select your age:" Margin="0,0,0,10"/>
+            <ComboBox x:Name="AgeComboBox" Width="200" Margin="0,0,0,10">
+                <ComboBox.ItemsSource>
+                    <x:Array Type="{x:Type sys:Int32}">
+                        <sys:Int32>18</sys:Int32>
+                        <sys:Int32>19</sys:Int32>
+                        <sys:Int32>20</sys:Int32>
+                        <sys:Int32>21</sys:Int32>
+                        <sys:Int32>22</sys:Int32>
+                        <sys:Int32>23</sys:Int32>
+                        <sys:Int32>24</sys:Int32>
+                        <sys:Int32>25</sys:Int32>
+                    </x:Array>
+                </ComboBox.ItemsSource>
+            </ComboBox>
+        </StackPanel>
+    </Grid>
+</UserControl>

@@ -1,0 +1,21 @@
+# Build results
+.vs
+[Dd]ebug
+[Bb]in
+[Oo]bj
+[Dd]ll
+packages
+# production
+build
+# 前端库 
+node_modules
+TrackMonitorService.vs
+# C#测试
+TestResults
+
+*.rar
+*.msi
+Reference
+DEV
+00-开发文档
+01-仓库系统框架/DatabaseDx/
